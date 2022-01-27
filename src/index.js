@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import * as path from 'path';
+import path from 'path';
 import diff from './diff.js';
 
 const gendiff = (filepath1, filepath2) => {

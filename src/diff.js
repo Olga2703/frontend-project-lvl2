@@ -14,11 +14,14 @@ const getDiff = (obj1, obj2) => {
       acc[`- ${key}`] = obj1[key];
       acc[`+ ${key}`] = obj2[key];
     } else {
-      acc[key] = obj1[key];
+      acc[`  ${key}`] = obj1[key];
     }
     return acc;
   }, {});
-  return result;
+
+  const entries = Object.entries(result);
+  const stringResult = `{\n  ${entries.map((entry) => entry.join(': ')).join('\n  ')}\n}`;
+  return stringResult;
 };
 
 export default getDiff;
