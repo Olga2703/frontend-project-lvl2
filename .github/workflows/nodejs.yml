@@ -1,8 +1,6 @@
 name: Node CI
 on: push
 jobs:
-  build:
-    runs-on: ubuntu-latest
   my-job:
     runs-on: ubuntu-latest
     strategy:
