@@ -6,4 +6,4 @@
 
 [![lint-push](https://github.com/Olga2703/frontend-project-lvl2/actions/workflows/lint-push.yml/badge.svg)](https://github.com/Olga2703/frontend-project-lvl2/actions/workflows/lint-push.yml)
 
-[![unit-test](https://github.com/Olga2703/frontend-project-lvl2/actions/workflows/unit-test.yml/badge.svg)](https://github.com/Olga2703/frontend-project-lvl2/actions/workflows/unit-test.yml)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/f980a2fbd299651a1f03/test_coverage)](https://codeclimate.com/github/Olga2703/frontend-project-lvl2/test_coverage)
