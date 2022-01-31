@@ -7,3 +7,5 @@
 [![Node CI](https://github.com/Olga2703/frontend-project-lvl2/actions/workflows/nodejs.yml/badge.svg)](https://github.com/Olga2703/frontend-project-lvl2/actions/workflows/nodejs.yml)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/f980a2fbd299651a1f03/test_coverage)](https://codeclimate.com/github/Olga2703/frontend-project-lvl2/test_coverage)
+
+[![asciicast](https://asciinema.org/a/i1k4ld6rbCO3NQbjZuxEQkEKJ.svg)](https://asciinema.org/a/i1k4ld6rbCO3NQbjZuxEQkEKJ)
