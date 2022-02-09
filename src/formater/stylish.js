@@ -7,9 +7,7 @@ const getString = (value, countSpace) => {
   if (!_.isObject(value)) {
     return value;
   }
-  const string = _.keys(value).map(
-    (item) => `${getIndention(countSpace + 2)}  ${item}: ${getString(value[item], countSpace + 2)}`
-  );
+  const string = _.keys(value).map((item) => `${getIndention(countSpace + 2)}  ${item}: ${getString(value[item], countSpace + 2)}`);
   return `{\n${string.join('\n')}\n${getIndention(countSpace + 1)}}`;
 };
 
