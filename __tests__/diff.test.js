@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import yaml from 'js-yaml';
 import diff from '../src/diff.js';
+import stylish from '../src/formater/stylish.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -27,14 +28,14 @@ describe('gendiff', () => {
   test('diff into JSON', () => {
     const file1ToObj = JSON.parse(fileJsonOne);
     const file2ToObj = JSON.parse(fileJsonTwo);
-    const result = diff(file1ToObj, file2ToObj);
+    const result = stylish(diff(file1ToObj, file2ToObj));
     expect(result).toEqual(expected);
   });
 
   test('diff into YML', () => {
     const file1ToObj = yaml.load(fileYmlOne);
     const file2ToObj = yaml.load(fileYmlTwo);
-    const result = diff(file1ToObj, file2ToObj);
+    const result = stylish(diff(file1ToObj, file2ToObj));
     expect(result).toEqual(expected);
   });
 });
