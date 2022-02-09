@@ -2,6 +2,7 @@ import { readFileSync } from 'fs';
 import path from 'path';
 import diff from './diff.js';
 import parsers from './parsers.js';
+import stylish from './formater/stylish.js';
 
 const gendiff = (filepath1, filepath2) => {
   const pathOne = path.resolve(filepath1);
@@ -14,7 +15,7 @@ const gendiff = (filepath1, filepath2) => {
   const obj1 = parsers(dateOne, extOne);
   const obj2 = parsers(dateTwo, extTwo);
 
-  const result = diff(obj1, obj2);
+  const result = stylish(diff(obj1, obj2));
   console.log(result);
 };
 
