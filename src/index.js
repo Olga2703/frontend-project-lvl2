@@ -19,6 +19,7 @@ const gendiff = (filepath1, filepath2, format = 'stylish') => {
   if (format === 'stylish') {
     return stylish(result);
   }
+  return stylish(result);
 };
 
 export default gendiff;
