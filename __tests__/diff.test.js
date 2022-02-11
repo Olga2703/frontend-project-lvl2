@@ -3,8 +3,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import yaml from 'js-yaml';
 import diff from '../src/diff.js';
-import stylish from '../src/formater/stylish.js';
-import plain from '../src/formater/plain.js';
+import stylish from '../src/formatters/stylish.js';
+import plain from '../src/formatters/plain.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
