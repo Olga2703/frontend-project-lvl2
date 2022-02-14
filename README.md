@@ -8,4 +8,4 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/f980a2fbd299651a1f03/test_coverage)](https://codeclimate.com/github/Olga2703/frontend-project-lvl2/test_coverage)
 
-[![asciicast](https://asciinema.org/a/DzUeM8kl8G0ORzAcw3a4LJMFa.svg)](https://asciinema.org/a/DzUeM8kl8G0ORzAcw3a4LJMFa)
+[![asciicast](https://asciinema.org/a/LYWKv4yn1ajvs16N2tjFTAuVH.svg)](https://asciinema.org/a/LYWKv4yn1ajvs16N2tjFTAuVH)
