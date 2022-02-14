@@ -4,6 +4,7 @@ import diff from './diff.js';
 import parsers from './parsers.js';
 import stylish from './formatters/stylish.js';
 import plain from './formatters/plain.js';
+import json from './formatters/json.js';
 
 const gendiff = (filepath1, filepath2, format = 'stylish') => {
   const pathOne = path.resolve(filepath1);
@@ -18,6 +19,9 @@ const gendiff = (filepath1, filepath2, format = 'stylish') => {
 
   const result = diff(obj1, obj2);
 
+  if (format === 'json') {
+    return json(result);
+  }
   return format === 'stylish' ? stylish(result) : plain(result);
 };
 
