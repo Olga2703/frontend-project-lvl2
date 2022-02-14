@@ -1,11 +1,8 @@
 import yaml from 'js-yaml';
 
 export default (date, extension) => {
-  let parser;
   if (extension === '.json') {
-    parser = JSON.parse;
-  } else if (extension === '.yml' || extension === '.yaml') {
-    parser = yaml.load;
+    return JSON.parse(date);
   }
-  return parser(date);
+  return extension === '.yml' || extension === '.yaml' ? yaml.load(date) : undefined;
 };
