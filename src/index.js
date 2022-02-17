@@ -9,11 +9,11 @@ const gendiff = (filepath1, filepath2, format = 'stylish') => {
   const pathTwo = path.resolve(filepath2);
   const dateOne = readFileSync(pathOne);
   const dateTwo = readFileSync(pathTwo);
-  const extOne = path.extname(filepath1);
-  const extTwo = path.extname(filepath2);
+  const typeDateOne = path.extname(filepath1).slice(1);
+  const typeDateTwo = path.extname(filepath2).slice(1);
 
-  const obj1 = parsers(dateOne, extOne);
-  const obj2 = parsers(dateTwo, extTwo);
+  const obj1 = parsers(dateOne, typeDateOne);
+  const obj2 = parsers(dateTwo, typeDateTwo);
 
   const result = diff(obj1, obj2);
 
